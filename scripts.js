@@ -7,5 +7,10 @@ function validateForm() {
     return false;
   }
 
+  if (password.length < 8) {
+    alert("Your password must be at least 8 characters long.");
+    return false;
+  }
+
   return true;
 }
